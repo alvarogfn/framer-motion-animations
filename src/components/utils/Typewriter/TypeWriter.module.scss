@@ -1,0 +1,18 @@
+.text {
+  position: relative;
+}
+
+.writing {
+  position: relative;
+
+  margin-left: 2.5px;
+
+  display: inline-block;
+
+  transform: translateY(10%);
+
+  width: 10px;
+  height: 30px;
+
+  background-color: #f20505;
+}

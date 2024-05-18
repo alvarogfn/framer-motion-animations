@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+}
+
+.content {
+  margin: 0 auto;
+  min-width: 300px;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+}

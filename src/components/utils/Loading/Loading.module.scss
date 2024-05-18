@@ -1,0 +1,75 @@
+.loading {
+  display: inline-block;
+
+  text-transform: uppercase;
+  color: #f1f1f1;
+
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+
+  padding: 20px;
+
+  width: 275px;
+  height: 132.5px;
+
+  position: relative;
+}
+
+.letters {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  span {
+    animation-name: rotateLetter;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @for $var from 1 through 7 {
+    span:nth-child(#{$var}) {
+      animation-duration: 1s;
+      animation-delay: #{$var * 1100}ms;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    animation: rotateSquare 1s ease-in-out infinite;
+
+    content: "";
+
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+  }
+}
+
+@keyframes rotateSquare {
+  0% {
+    transform: translateX(-50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%) rotateZ(180deg);
+  }
+}
+
+@keyframes rotateLetter {
+  to {
+    transform: rotateX(0deg);
+  }
+
+  from {
+    transform: rotateX(360deg);
+  }
+}

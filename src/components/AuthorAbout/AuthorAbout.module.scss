@@ -1,0 +1,63 @@
+.container {
+  max-width: 440px;
+
+  margin: 10px;
+
+  padding: 10px;
+  padding-right: 40px;
+
+  position: relative;
+
+  background-color: #0511f2;
+
+  overflow: hidden;
+
+  height: fit-content;
+}
+
+.h2 {
+  font-size: 1.2rem;
+  color: #ffff;
+
+  margin-bottom: 10px;
+
+  max-height: 100%;
+}
+
+.about {
+  font-size: 0.9rem;
+
+  max-height: 100%;
+
+  overflow: hidden;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+
+  top: 0;
+  color: white;
+  background-color: #0d0d0d;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  transition: height 500ms, width 500ms;
+  transition-timing-function: ease-in-out;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.493);
+  cursor: pointer;
+
+  &:hover {
+    height: 50px;
+    width: 50px;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+}

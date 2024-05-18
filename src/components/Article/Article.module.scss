@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+.header,
+.content,
+.footer {
+  grid-column: 1 / 17;
+}
+
+@media screen and (min-width: 600px) {
+  .author {
+    margin-left: 10vw;
+  }
+
+  .content {
+    grid-column: 2 / 16;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .author {
+    margin-left: 10vw;
+  }
+
+  .content {
+    grid-column: 2 / 13;
+  }
+}

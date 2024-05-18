@@ -1,0 +1,30 @@
+.paragraph {
+  line-height: 30px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+
+  text-align: justify;
+  text-justify: inter-word;
+
+  color: #bbbbbb;
+
+  &::first-letter {
+    display: inline-block;
+
+    font-weight: 900;
+    font-size: 2em;
+
+    padding: 5px;
+  }
+}
+
+.social {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .paragraph {
+    line-height: 40px;
+    font-size: 1.7rem;
+  }
+}
